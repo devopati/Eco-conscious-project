@@ -6,11 +6,14 @@ import "./market.css";
 import { marketData } from "../../Data/marketData";
 import { BsFilter } from "react-icons/bs";
 import { MdOutlineAddCircle } from "react-icons/md";
+import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import MarketAdd from "./Add/MarketAdd";
 
 const Market = () => {
   const [marketAddOpen, setMarketAddOpen] = useState(false);
+  const [dropDownActive, setDropDownActive] = useState(false);
   let storageData = JSON.parse(localStorage.getItem("marketData"));
   // console.log(storageData);
   let data = [];
@@ -25,12 +28,32 @@ const Market = () => {
       <Header />
       <div className="market-container">
         <div className="market-top">
-          <Link onClick={() => setMarketAddOpen(true)}>
-            <div className="add-to-market">
+          <div className="add-to-market">
+            <Link
+              onClick={() => setDropDownActive(!dropDownActive)}
+              className="add-to-market"
+            >
               <MdOutlineAddCircle id="amicon" />
               <span>Add to Market</span>
+              {!dropDownActive ? <AiFillCaretDown /> : <AiFillCaretUp />}
+            </Link>
+
+            <div
+              className={`dropdown-options ${!dropDownActive && "market-none"}`}
+            >
+              <Link to={"/addmarket"}>
+                <div className="dropdown-item">
+                  <span>Add Green Waste</span>
+                  <MdOutlineAddCircle id="amicon" />
+                </div>
+              </Link>
+
+              <div className="dropdown-item">
+                <span>Determine your waste type</span>
+                <IoIosArrowForward />
+              </div>
             </div>
-          </Link>
+          </div>
           <div className="filter">
             <BsFilter id="amicon" /> <span>Filter</span>
           </div>
@@ -53,12 +76,6 @@ const Market = () => {
               </div>
             );
           })}
-        </div>
-        <div className={`market-mode ${!marketAddOpen && "market-none"}`}>
-          <MarketAdd
-            setMarketAddOpen={setMarketAddOpen}
-            marketAddOpen={marketAddOpen}
-          />
         </div>
       </div>
       <Footer />

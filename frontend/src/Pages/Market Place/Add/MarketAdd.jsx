@@ -3,6 +3,9 @@ import { MdArrowBack } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { selectName } from "../../../Redux/Features/Auth/authSlice";
 import { toast } from "react-toastify";
+import ImageContainer from "../../../Components/ImageContainer";
+import Footer from "../../../Components/Footer/Footer";
+import Header from "../../../Components/Header/Header";
 
 const MarketAdd = ({ setMarketAddOpen }) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -93,51 +96,51 @@ const MarketAdd = ({ setMarketAddOpen }) => {
   };
 
   return (
-    <div className="market-add-container">
-      <div className="close-btnn" onClick={() => setMarketAddOpen(false)}>
-        <MdArrowBack />
-      </div>
-      <div className="market-add-top">
-        <h1>Fill the Fields to add To Market Place</h1>
-      </div>
-      <div className="marketadd-form">
-        <label htmlFor="title">Title</label>
-        <input
-          type="title"
-          placeholder="Enter title"
-          name="title"
-          value={formData.title}
-          onChange={handleChange}
-        />
-
-        <div className="price">
-          {" "}
-          <label htmlFor="price">Price</label>
+    <>
+      <Header />
+      <div className="market-add-container">
+        <div className="market-add-top"></div>
+        <ImageContainer />
+        <div className="marketadd-form">
+          <label htmlFor="title">Title</label>
           <input
-            type="price"
-            placeholder="Enter price"
-            name="price"
-            value={formData.price}
+            type="title"
+            placeholder="Enter title"
+            name="title"
+            value={formData.title}
             onChange={handleChange}
-            autoComplete={false}
           />
-        </div>
 
-        <label htmlFor="description">Description</label>
-        <textarea
-          type="description"
-          placeholder="Enter description"
-          name="description"
-          value={formData.description}
-          onChange={handleChange}
-        />
-        <div>
-          <button onClick={handleSubmit}>
-            {isLoading ? "Processing..." : "Submit"}
-          </button>
+          <div className="price">
+            {" "}
+            <label htmlFor="price">Price</label>
+            <input
+              type="price"
+              placeholder="Enter price"
+              name="price"
+              value={formData.price}
+              onChange={handleChange}
+              autoComplete={false}
+            />
+          </div>
+
+          <label htmlFor="description">Description</label>
+          <textarea
+            type="description"
+            placeholder="Enter description"
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+          />
+          <div>
+            <button onClick={handleSubmit}>
+              {isLoading ? "Processing..." : "Submit"}
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

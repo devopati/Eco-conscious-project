@@ -1,0 +1,25 @@
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.img-btn button{
+    background-color: var(--color-green-variant);
+    padding: 10px 20px;
+    font-weight: 900;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+}
+.img-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
