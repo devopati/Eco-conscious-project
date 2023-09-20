@@ -36,40 +36,29 @@ const Homepage = () => {
       <div className="homepage-sub-hero">
         <div className="sub-hero-cards">
           <div className="sub-hero-card">
-            <h2>CONTROL</h2>
-            <h3>Green Waste Management</h3>
-            <p>
-              We aim at empowering peole to take an initiative to prevent
-              further degradation of the environment by employing sustainable
-              methods while disposing of green waste.
-            </p>
+            <h2>ML</h2>
+            <h3>Machine Learning</h3>
+            <p>We aim at empowering peole to take an initiative to prevent</p>
 
-            {/* <button className="subhero-btn">
-              Learn More <BsFillArrowRightCircleFill id="btn-icon" />
-            </button> */}
+            <button className="subhero-btn">
+              Try out <BsFillArrowRightCircleFill id="btn-icon" />
+            </button>
           </div>
           <div className="sub-hero-card">
-            <h2>COGNITIVE</h2>
-            <h3>Artificial intelligence</h3>
-            <p>
-              With our integrated Watson chatbot, we provide a dynamic platform
-              aimed at spreading awareness about green waste management.
-            </p>
+            <h2>AI</h2>
+            <h3>Artificial Intelligence</h3>
+            <p>With our integrated Watson chatbot, we provide a dynamic</p>
             <button className="subhero-btn" onClick={() => navigate("/about")}>
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
             </button>
           </div>
           <div className="sub-hero-card">
-            <h2>CONSERVATION</h2>
-            <h3>Educating community</h3>
-            <p>
-              We focus on disposing of all waste sustainably minimizing
-              environmental impact. this is by creating awareness to the
-              communinty through the blogs on our website.
-            </p>
-            {/* <button className="subhero-btn">
-              Learn More <BsFillArrowRightCircleFill id="btn-icon" />
-            </button> */}
+            <h2>MARKET</h2>
+            <h3>Buy and Sell</h3>
+            <p>We focus on disposing of all waste sustainably minimizing</p>
+            <button className="subhero-btn">
+              Check out <BsFillArrowRightCircleFill id="btn-icon" />
+            </button>
           </div>
         </div>
       </div>
@@ -131,18 +120,11 @@ const Homepage = () => {
       </div>
       <div className="homepage-mid-bottom">
         <div className="mid-bottom-hang">
-          <h2>request free quote</h2>
+          <h2>latest articles</h2>
         </div>
         <div className="midbottom-head">
-          <h1>latest articles</h1>
-          <h3>
-            Explore a vibrant hub of eco-friendly tips, innovative techniques,
-            and practical solutions that will empower you to make a positive
-            impact on the environment. From composting secrets to clever
-            recycling hacks, our articles will guide you towards reducing waste,
-            conserving resources, and nurturing a healthier planet. Dive into
-            our blog now and discover the path to a more sustainable future!
-          </h3>
+          {/* <h1>latest articles</h1> */}
+
           <div className="mid-bootom-cards">
             <div className="midbottom-card">
               <div className="mid-top">
@@ -217,39 +199,14 @@ const Homepage = () => {
               </button>
             </div>
           </div>
-          <div className="mid-bottom-nav-btns">
+          {/* <div className="mid-bottom-nav-btns">
             <BsFillArrowLeftSquareFill id="nav-btn" />
             <BsFillArrowRightSquareFill id="nav-btn" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="homepage-circular-pattern">
-        <h1>
-          circular <span>economy</span>
-        </h1>
-        <h3>
-          green waste and the circular economy are interconnected concepts that
-          promote sustainable waste management and resource utilization. Green
-          waste, which includes organic materials like food scraps and yard
-          trimmings, can be effectively recycled and transformed into valuable
-          resources through processes like composting and anaerobic digestion.
-          This enables the recovery of nutrients, the generation of renewable
-          energy, and the creation of economic opportunities. By incorporating
-          green waste into circular economy models, we can minimize waste,
-          maximize resource efficiency, and contribute to a more sustainable and
-          regenerative approach to waste management and resource utilization.
-        </h3>
-        <div className="circular-pattern-btns">
-          <button>
-            <b>CONTROL</b>
-          </button>
-          <button>
-            <b>COGNITIVE</b>
-          </button>
-          <button>
-            <b>CONSERVATION</b>
-          </button>
-        </div>
+        <div className="circular-pattern-btns"></div>
         <div className="circular-pattern-cards">
           <div className="circular-pattern-card">
             <div className="circular-pattern-card-image">

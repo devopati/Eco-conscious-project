@@ -49,10 +49,11 @@
     left: 20px;
     padding: 0 3rem;
     color: #fff;
-    font-size: 18px;
+    font-size: 19px;
     opacity: 1;
     transition: opacity 0.5s ease;
     z-index: 4;
+    line-height: 1.8;
   }
   .caption div{
     margin-top: 1.5rem;

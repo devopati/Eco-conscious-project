@@ -28,10 +28,10 @@ const Slider = () => {
             <div>
               <small>{image.caption}</small>
             </div>
-            <div className="slider-btns">
+            {/* <div className="slider-btns">
               <Button text={"Discover"} />
               <Button text={"Learn more"} />
-            </div>
+            </div> */}
           </div>
         </div>
       ))}
