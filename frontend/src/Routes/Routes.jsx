@@ -9,6 +9,7 @@ import Login from "../Pages/Login/Login";
 import Market from "../Pages/Market Place/Market";
 import About from "../Pages/About/About";
 import MarketAdd from "../Pages/Market Place/Add/MarketAdd";
+import DetermineImageType from "../Components/DetermineImageType";
 
 const WebRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const WebRoutes = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/market" element={<Market />} />
           <Route path="/addmarket" element={<MarketAdd />} />
+          <Route path="/determine-image" element={<DetermineImageType />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>

@@ -48,10 +48,12 @@ const Market = () => {
                 </div>
               </Link>
 
-              <div className="dropdown-item">
-                <span>Determine your waste type</span>
-                <IoIosArrowForward />
-              </div>
+              <Link to={"/determine-image"}>
+                <div className="dropdown-item">
+                  <span>Determine your waste type</span>
+                  <IoIosArrowForward />
+                </div>
+              </Link>
             </div>
           </div>
           <div className="filter">

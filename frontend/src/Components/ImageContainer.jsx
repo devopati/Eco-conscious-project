@@ -28,14 +28,18 @@ const ImageContainer = () => {
         <IoImageSharp size={300} color="grey" />
       )}
       <div>
-        <h3>Upload an image to classify your waste</h3>
+        {selectedImage === null && (
+          <h3>Upload an image to classify your waste</h3>
+        )}
         <br />
       </div>
       <div className="img-btn">
         <button>
           <input type="file" accept="image/*" onChange={handleImageUpload} />
         </button>
-        <button>Upload Image</button>
+        <button style={{ backgroundColor: selectedImage === null && "grey" }}>
+          Upload Image
+        </button>
       </div>
     </div>
   );

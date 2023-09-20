@@ -23,3 +23,7 @@
     flex-direction: column;
     gap: 12px;
 }
+.image-type-container{
+background-color: var(--color-green);
+padding: .5rem 20rem;
+}
