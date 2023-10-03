@@ -1,0 +1,14 @@
+.fullmarket-container{
+  margin: 1rem 18rem;
+}
+.full-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.fllmc-image img{
+    width: 100%;
+    height: 380px;
+    object-fit:cover;
+}

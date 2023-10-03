@@ -23,6 +23,7 @@ const Market = () => {
     data.push(...marketData);
   }
   // console.log(data);
+
   return (
     <>
       <Header />
@@ -74,6 +75,7 @@ const Market = () => {
                   description={data.description}
                   id={data.id}
                   price={data.price}
+                  linkTo={`/market/${data.id}`}
                 />
               </div>
             );

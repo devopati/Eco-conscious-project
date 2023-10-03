@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./marketcard.css";
 import { HiUserCircle } from "react-icons/hi";
 import { FcLike, FcLikePlaceholder } from "react-icons/fc";
+import UserProfileInfo from "../UserProfileInfo";
+import { Link } from "react-router-dom";
 
 const MarketCard = ({
   name,
@@ -13,12 +15,17 @@ const MarketCard = ({
   description,
   price,
   id,
+  linkTo,
 }) => {
   const [liked, setLiked] = useState(false);
+  const [userProfileActive, setUserProfileActive] = useState(false);
   return (
     <div className="marketcard-container">
       <div className="marketcard-content">
-        <div className="mc-user-info">
+        <div
+          className="mc-user-info"
+          onClick={() => setUserProfileActive(true)}
+        >
           <HiUserCircle id="mc-user" />
           <h3>{name}</h3>
         </div>
@@ -54,11 +61,19 @@ const MarketCard = ({
                 </div>
               )}
             </div>
-            <div className="mc-view-more">
+            <Link to={linkTo} className="mc-view-more">
               <span>Purchase</span>
-            </div>
+            </Link>
           </div>
         </div>
+      </div>
+      <div
+        className={`userProfileInfo ${userProfileActive && "profile-active"}`}
+      >
+        <UserProfileInfo
+          setUserProfileActive={setUserProfileActive}
+          name={name}
+        />
       </div>
     </div>
   );
