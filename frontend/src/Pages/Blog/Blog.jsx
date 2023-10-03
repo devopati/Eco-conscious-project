@@ -6,6 +6,7 @@ import "./blog.css";
 import { BlogData } from "../../Data/BlogData";
 import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 // BlogData.push({id:"jjfjjf12", heading:"Home menu", date: "June 26, 2023",    blogText:"jrfjhjhrd" })
 
@@ -17,9 +18,26 @@ const Blog = () => {
     <div className="blog-container">
       <Header />
       <div className="blog-body">
+        <div
+          className="post-blog"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Link to={"/postBlog"}>
+            <button className="subhero-btn">
+              Post Blog
+              <BsFillArrowRightCircleFill id="btn-icon" />
+            </button>
+          </Link>
+          <br />
+        </div>
+
         <div className="blog-header">
           <h1>GREEN WASTE MANAGMENT BLOG POSTS</h1>
         </div>
+
         {BlogData.map((data) => {
           return (
             <div className="blog-posts" key={data.id}>

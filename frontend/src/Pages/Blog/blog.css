@@ -118,6 +118,11 @@
     text-decoration: underline;
 }
 
+/* Post blog */
+.post-blog-container{
+    margin: 3rem 10rem;
+}
+
 @media screen and (max-width:768px) {
     .blog-body{
         margin-top: 12vh;

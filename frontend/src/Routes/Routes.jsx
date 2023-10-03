@@ -11,6 +11,7 @@ import About from "../Pages/About/About";
 import MarketAdd from "../Pages/Market Place/Add/MarketAdd";
 import DetermineImageType from "../Components/DetermineImageType";
 import FullMarketComponent from "../Pages/Market Place/FullMarketComponent";
+import PostBlog from "../Pages/Blog/PostBlog";
 
 const WebRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const WebRoutes = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/postBlog" element={<PostBlog />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:blogId" element={<FullBlog />} />
           <Route path="/register" element={<Register />} />
