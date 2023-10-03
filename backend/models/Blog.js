@@ -4,7 +4,7 @@ const BlogSchema = new mongoose.Schema(
   {
     title: String,
     postedAt: String,
-    blog: String,
+    blogText: String,
     likes: [
       {
         type: mongoose.Schema.Types.ObjectId,
