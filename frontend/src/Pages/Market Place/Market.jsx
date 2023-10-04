@@ -9,20 +9,28 @@ import { MdOutlineAddCircle } from "react-icons/md";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
-import MarketAdd from "./Add/MarketAdd";
+import { useDispatch, useSelector } from "react-redux";
+import { GetMarketData } from "../../Redux/Features/MarketSlice";
+import { readableTimeFormat } from "../../../utils/TimeFormatter";
 
 const Market = () => {
+  const dispatch = useDispatch();
+
   const [marketAddOpen, setMarketAddOpen] = useState(false);
   const [dropDownActive, setDropDownActive] = useState(false);
-  let storageData = JSON.parse(localStorage.getItem("marketData"));
-  // console.log(storageData);
   let data = [];
-  if (storageData) {
-    data.push(...marketData, ...storageData);
-  } else {
-    data.push(...marketData);
-  }
-  // console.log(data);
+
+  useEffect(() => {
+    const getMarketDataHandler = async () => {
+      await dispatch(GetMarketData());
+    };
+
+    getMarketDataHandler();
+  }, []);
+
+  const { marketData, isLoading, errMsg, succMessage } = useSelector(
+    (state) => state.market
+  );
 
   return (
     <>
@@ -62,20 +70,19 @@ const Market = () => {
           </div>
         </div>
         <div className="market-cards">
-          {data.map((data) => {
+          {marketData.map((data) => {
             return (
               <div className="mk-card">
                 <MarketCard
-                  name={data.name}
-                  date={data.date}
-                  time={data.time}
-                  image={data.image}
-                  likecount={data.likecount}
-                  title={data.title}
-                  description={data.description}
-                  id={data.id}
-                  price={data.price}
-                  linkTo={`/market/${data.id}`}
+                  name={data?.productName}
+                  date={readableTimeFormat(data?.createdAt)}
+                  image={data?.productImg?.imageUrl}
+                  likecount={data?.likes.length}
+                  title={data?.title}
+                  description={data?.description}
+                  id={data?.id}
+                  price={data?.price}
+                  linkTo={`/market/${data?._id}`}
                 />
               </div>
             );

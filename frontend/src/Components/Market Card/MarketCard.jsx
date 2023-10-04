@@ -29,9 +29,7 @@ const MarketCard = ({
           <HiUserCircle id="mc-user" />
           <h3>{name}</h3>
         </div>
-        <small id="mc-date">
-          Posted : {date} at:{time}
-        </small>
+        <small id="mc-date">Posted : {date}</small>
         <div className="mc-image">
           <img src={image} alt="image" />
         </div>

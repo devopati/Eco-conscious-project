@@ -8,7 +8,7 @@ const PostWasteProduct = async (req, res) => {
   try {
     const { userId } = req.params;
 
-    const { productName, description } = req.body;
+    const { productName, description, price } = req.body;
 
     const productPic = req.file;
 
@@ -40,10 +40,11 @@ const PostWasteProduct = async (req, res) => {
     }
 
     const newWasteProduct = new WasteProduct({
-      userId,
+      user: userId,
       productName,
       productImg,
       description,
+      price,
     });
 
     await newWasteProduct.save();

@@ -3,7 +3,9 @@ import WasteProduct from "../models/WasteProduct.js";
 
 const RetrieveWasteProducts = async (req, res) => {
   try {
-    const products = await WasteProduct.find({}).sort({ createdAt: -1 });
+    const products = await WasteProduct.find({})
+      .populate("user")
+      .sort({ createdAt: -1 });
 
     res.status(StatusCodes.OK).json({ products });
   } catch (error) {

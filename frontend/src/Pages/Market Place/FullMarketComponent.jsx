@@ -3,13 +3,18 @@ import { Link, useParams } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./fullmarket.css";
-import { marketData } from "../../Data/marketData";
 import { HiUserCircle } from "react-icons/hi";
 import { FcLike } from "react-icons/fc";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { useSelector } from "react-redux";
+import { readableTimeFormat } from "../../../utils/TimeFormatter";
 
 const FullMarketComponent = () => {
   const { marketId } = useParams();
+
+  const { marketData, isLoading, errMsg, succMessage } = useSelector(
+    (state) => state.market
+  );
 
   return (
     <>
@@ -17,7 +22,7 @@ const FullMarketComponent = () => {
 
       <div className="fullmarket-container">
         {marketData
-          .filter((data) => data?.id === marketId)
+          .filter((data) => data?._id === marketId)
           .map((data) => {
             return (
               <div className="full-content">
@@ -26,10 +31,10 @@ const FullMarketComponent = () => {
                   onClick={() => setUserProfileActive(true)}
                 >
                   <HiUserCircle id="mc-user" />
-                  <h3>{data?.name}</h3>
+                  <h3>{data?.user?.fullName}</h3>
                 </div>
                 <small id="mc-date">
-                  Posted : {data?.date} at:{data?.time}
+                  Posted : {readableTimeFormat(data?.createdAt)}
                 </small>
                 <div className="flmc-title">
                   <h3>
@@ -37,7 +42,7 @@ const FullMarketComponent = () => {
                   </h3>
                 </div>
                 <div className="fllmc-image">
-                  <img src={data?.image} alt="image" />
+                  <img src={data?.productImg?.imageUrl} alt="image" />
                 </div>
 
                 <div>
