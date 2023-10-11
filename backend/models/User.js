@@ -30,6 +30,18 @@ const UserSchema = new mongoose.Schema(
       trim: true,
       default: "+2547",
     },
+    profileImage: {
+      type: Object,
+      default: {
+        imageUrl:
+          "https://res.cloudinary.com/df23q280l/image/upload/f_auto,q_auto/w2iewy0nbrglimrsqpyd",
+        id: "w2iewy0nbrglimrsqpyd",
+      },
+    },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );

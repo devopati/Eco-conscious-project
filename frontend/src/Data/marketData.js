@@ -10,7 +10,7 @@ export const marketData = [
     likecount: 148,
     title: "Green Garbbage",
     description:
-      "Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding,...",
+      "Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding, Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding",
   },
   {
     id: "kjeg6f5875cklm",
@@ -23,7 +23,7 @@ export const marketData = [
     likecount: 62,
     title: "Food Waste Recycle",
     description:
-      "How much preventable food waste are you tossing out?At our San Jose processing facility, we divert food waste from the landfill by recovering organics out of the solid waste stream. The recovered organics are processed into landscape",
+      "How much preventable food waste are you tossing out?At our San Jose processing facility, we divert food waste from the landfill by recovering organics out of the solid waste stream. The recovered organics are processed into landscape Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding",
   },
   {
     id: "fcsxzxff1001",
@@ -37,7 +37,7 @@ export const marketData = [
 
     title: "Vegatable waste",
     description:
-      "How much preventable food waste are you tossing out?At our San Jose processing facility, we divert food waste from the landfill by recovering organics out of the solid waste stream. The recovered organics are processed into landscape",
+      "How much preventable food waste are you tossing out?At our San Jose processing facility, we divert food waste from the landfill by recovering organics out of the solid waste stream. The recovered organics are processed into landscape Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding",
   },
   {
     id: "dfxgchvdfjbmn,vv65210",
@@ -51,7 +51,7 @@ export const marketData = [
 
     title: "Vegatable Farm waste",
     description:
-      "How much preventable food waste are you tossing out?At our San Jose processing facility, we divert food waste from the landfill by recovering organics out of the solid waste stream. The recovered organics are processed into landscape",
+      "How much preventable food waste are you tossing out?At our San Jose processing facility, we divert food waste from the landfill by recovering organics out of the solid waste stream. The recovered organics are processed into landscape Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding",
   },
   {
     id: "yedhjsiudjsk52vdd58f52",
@@ -65,6 +65,6 @@ export const marketData = [
 
     title: "Green Rich Food Waste",
     description:
-      "How much preventable food waste are you tossing out?At our San Jose processing facility, we divert food waste from the landfill by recovering organics out of the solid waste stream. The recovered organics are processed into landscape",
+      "How much preventable food waste are you tossing out?At our San Jose processing facility, we divert food waste from the landfill by recovering organics out of the solid waste stream. The recovered organics are processed into landscape Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding",
   },
 ];

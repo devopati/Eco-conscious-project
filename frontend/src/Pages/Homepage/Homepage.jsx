@@ -20,6 +20,7 @@ import icon6 from "../../assets/images/icon6.png";
 import { HiUser } from "react-icons/hi";
 import Footer from "../../Components/Footer/Footer";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -40,9 +41,11 @@ const Homepage = () => {
             <h3>Machine Learning</h3>
             <p>We aim at empowering peole to take an initiative to prevent</p>
 
-            <button className="subhero-btn">
-              Try out <BsFillArrowRightCircleFill id="btn-icon" />
-            </button>
+            <Link to={"/determine-image"}>
+              <button className="subhero-btn">
+                Try out <BsFillArrowRightCircleFill id="btn-icon" />
+              </button>
+            </Link>
           </div>
           <div className="sub-hero-card">
             <h2>AI</h2>
@@ -56,9 +59,11 @@ const Homepage = () => {
             <h2>MARKET</h2>
             <h3>Buy and Sell</h3>
             <p>We focus on disposing of all waste sustainably minimizing</p>
-            <button className="subhero-btn">
-              Check out <BsFillArrowRightCircleFill id="btn-icon" />
-            </button>
+            <Link to={"/market"}>
+              <button className="subhero-btn">
+                Check out <BsFillArrowRightCircleFill id="btn-icon" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -214,13 +219,13 @@ const Homepage = () => {
             </div>
           </div>
           <div className="circular-pattern-card cp-2">
-            <h2>Reducing food waste</h2>
+            <h2>Lets Save the Environment</h2>
             <h3>
               Food waste is responsible for 3 billion tonnes of carbon dioxide
               emissions.
             </h3>
             <p>
-              the earth cries out "save me". But this doesnt have to be the case
+              The earth cries out "save me". But this doesnt have to be the case
               everytime for we can fight together againts food waste .see how
               peoplpe out there are fighting food waste by visiting our blog
               page.
@@ -229,7 +234,7 @@ const Homepage = () => {
               className="middle-btn mid-bottom-btn"
               onClick={() => navigate("/blog")}
             >
-              Learn More <BsFillArrowRightCircleFill id="btn-icon" />
+              View Blogs <BsFillArrowRightCircleFill id="btn-icon" />
             </button>
           </div>
         </div>

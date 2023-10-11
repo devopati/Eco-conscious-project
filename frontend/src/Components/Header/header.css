@@ -1,12 +1,12 @@
 .header-container {
-  z-index: 9;
+  z-index: 9999;
 }
 
 .header-menu-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 3rem;
+  padding: 0rem 3rem;
   background: var(--color-black-variant);
   height: max-content;
 }
@@ -43,7 +43,7 @@
 .header-top-socials {
   display: flex;
   justify-content: flex-end;
-  padding: 1rem 3rem;
+  padding: .3rem 3rem;
   gap: 3rem;
   background: var(--color-black-variant);
   color: var(--color-white);

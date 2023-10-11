@@ -4,6 +4,8 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import connectDb from "./Db/connectDb.js";
 import UserRoute from "./routes/UserRoutes.js";
+import Blogroute from "./routes/BlogRoute.js";
+import WasteProductRoute from "./routes/WasteProdutRoute.js";
 
 const app = express();
 dotenv.config();
@@ -20,6 +22,8 @@ app.get("/", (req, res) => {
 
 // routes
 app.use("/api/user", UserRoute);
+app.use("/api/blog", Blogroute);
+app.use("/api/waste-product", WasteProductRoute);
 
 const startServer = async () => {
   try {

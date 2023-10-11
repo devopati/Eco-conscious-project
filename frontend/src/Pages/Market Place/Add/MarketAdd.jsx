@@ -20,7 +20,6 @@ const MarketAdd = ({ setMarketAddOpen }) => {
       return "";
     }
   };
-  //   console.log(getName());
 
   const imgUrls = [
     "https://images.unsplash.com/photo-1518736114810-3f3bedfec66a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFybSUyMHByb2R1Y2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",

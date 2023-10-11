@@ -4,6 +4,7 @@
     background: var(--color-white);
     padding-top: 1rem;
     transition: .3s ease;
+    /* position: relative; */
 }
 .marketcard-container:hover{
     background: var(--color-grey-variant);
@@ -93,6 +94,18 @@
 }
 .mc-description h3 span{
     color: var(--color-black-variant);
+}
+
+.userProfileInfo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 999;
+}
+.profile-active{
+    display: block;
 }
 
 @media screen and (max-width:768px) {
