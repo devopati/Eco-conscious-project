@@ -14,7 +14,8 @@ def predict():
     image = np.expand_dims(image, axis=0)
     image = image/255.0 
     prediction = model.predict(image)
-    return {'prediction': prediction.tolist()}
+    class_index = np.argmax(prediction, axis=1)
+    return class_index
 
 if __name__ == '__main__':
     app.run(port=5000)
