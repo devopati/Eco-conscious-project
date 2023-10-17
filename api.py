@@ -9,7 +9,7 @@ model = tf.keras.models.load_model('Eco_1.h5')
 @app.route('/predict', methods=['POST'])
 def predict():
     img = request.files['image']
-    # Preprocess your image here
+    # Preprocess the image
     image = img_to_array(image)
     image = np.expand_dims(image, axis=0)
     image = image/255.0 
