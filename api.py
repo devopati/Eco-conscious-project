@@ -5,15 +5,14 @@ import numpy as np
 
 app = Flask(__name__)
 model = tf.keras.models.load_model('Eco_1.h5')
+# class_labels = ['Cardboard', 'Glass', 'Metal', 'Paper', 'Plastic']
 
 @app.route('/predict', methods=['POST'])
-def predict():
-    img = request.files['image']
-    # Preprocess the image
-    image = img_to_array(image)
-    image = np.expand_dims(image, axis=0)
-    image = image/255.0 
-    prediction = model.predict(image)
+def predict_image(model, img):
+    img = img_to_array(img)
+    img = np.expand_dims(img, axis=0)
+    img = img/255.0 
+    prediction = model.predict(img)
     class_index = np.argmax(prediction, axis=1)
     return class_index
 
