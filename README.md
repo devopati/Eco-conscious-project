@@ -9,7 +9,6 @@
     - [IBM AI service(s) used](#ibm-ai-services-used)
     - [Other IBM technology used](#other-ibm-technology-used)
     - [Solution architecture](#solution-architecture)
-  - [Presentation materials](#presentation-materials)
     - [Solution demo video](#solution-demo-video)
     - [Project development roadmap](#project-development-roadmap)
   - [Additional details](#additional-details)
@@ -42,7 +41,6 @@ _INSTRUCTIONS: Included here is a list of commonly used IBM AI services. Remove 
 
 ### Other IBM technology used
 
-
 ### Solution architecture
 
 Diagram and step-by-step description of the flow of our solution:
@@ -54,9 +52,7 @@ Diagram and step-by-step description of the flow of our solution:
 3. At the bottom right of our web application, the user will be able to access ecobot, and answer any question regarding waste management and navigating the web page.
 4. The blog market place will also be accessible from the landing page.
 5. The market place allows users to upload their waste items where potential buyers can reach out.
-## Presentation materials
-
-_INSTRUCTIONS: The following deliverables should be officially posted to your My Team > Submissions section of the [Call for Code Global Challenge resources site](https://cfc-prod.skillsnetwork.site/), but you can also include them here for completeness. Replace the examples seen here with your own deliverable links._
+6. The community forum will be a place where users can share their experiences and knowledge on waste management.
 
 ### Solution demo video
 
@@ -78,7 +74,8 @@ See below for our proposed schedule on next steps after Call for Code 2023 submi
 
 ## Additional details
 
-_INSTRUCTIONS: The following deliverables are suggested, but **optional**. Additional details like this can help the judges better review your solution. Remove any sections you are not using._
+The models used on this project were too big to upload on github therefore we have provided a link to the google drive folder containing the models.
+[Models](https://drive.google.com/drive/folders/1zC43FWaP2Kz50YdgbNCAFtDAHk4vFfT3?usp=sharing)
 
 ### How to run the project
 
